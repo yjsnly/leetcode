@@ -7,7 +7,7 @@ class Solution:
         def dfs(i: int, _sum: int):
             if len(stack) == k and _sum == n:
                 ans.append(stack.copy())
-            elif len(stack) < k and _sum < n and k - len(stack) <= 10 - i:
+            elif len(stack) < k and _sum + i < n:
                 for j in range(i, 10):
                     stack.append(j)
                     dfs(j + 1, _sum + j)
