@@ -1,3 +1,4 @@
 .python-version
 solution
 target/
+.vscode/
